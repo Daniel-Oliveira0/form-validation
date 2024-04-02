@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <title>Formulário com JS</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="textos">
+            <div class="titulo">
+                <h2>FICOU COM DÚVIDAS?</h2>
+                <H2>NOS MANDE UMA MENSAGEM!</H2>
+            </div>
+
+            <div class="texto">
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de 24h.</p>
+            </div>
+        </div>
+        <form id="form" class="formulario">
+
+            <label class="caixa-input" for="nome">
+                <input type="text" class="input input-nome"  name="nome" id="nome" placeholder="Nome completo *">
+
+                <p class="campo-obrigatorio esconder" id="paragrafo">campo obrigatório</p>
+            </label>
+
+            <label class="caixa-input" for="email">
+                <input type="text" class="input input-email" name="email" id="email" placeholder="Email *">
+
+                <p class="campo-obrigatorio esconder" id="paragrafo">campo obrigatório</p>
+            </label>
+
+            <label class="caixa-input" for="numero">
+                <input type="number" class="input input-numero" id="numero" placeholder="Telefone *">
+
+                <p class="campo-obrigatorio esconder" id="paragrafo">campo obrigatório</p>
+            </label>
+
+            <label class="caixa-input" for="mensagem">
+                <textarea name="mensagem" class="textarea input-mensagem" id="mensagem" cols="30" rows="6"
+                    placeholder="Mensagem *"></textarea>
+
+                <p class="campo-obrigatorio esconder" id="paragrafo">campo obrigatório</p>
+            </label>
+
+            <p class="aviso-obrigatorio">*campos obrigatórios</p>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

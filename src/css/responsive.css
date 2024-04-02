@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .textos {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .formulario {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .container .formulario .input {
+        width: 330px;
+    }
+
+    .container .formulario .textarea {
+        max-width: 330px;
+        max-height: 100px;
+    }
+
+    .container .formulario .aviso-obrigatorio {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+
+    .container .formulario .btn {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container .formulario {
+        width: 310px;
+        height: 450px;
+    }
+
+    .container .formulario .input {
+        width: 290px;
+    }
+
+    .container .formulario .textarea {
+        max-width: 290px;
+        max-height: 100px;
+    }
+
+    .container .formulario .btn {
+        width: 250px;
+    }
+}
