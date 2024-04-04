@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(/src/image/imagem\ bg.png);
+    background-image: url(../image/imagem-bg.png);
     background-size: contain;
 }
 
