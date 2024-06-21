@@ -17,25 +17,3 @@ formulario.addEventListener("submit", (e) => {
     }
   });
 });
-
-inputs.forEach((input) => {
-  input.addEventListener("input", () => {
-    const paragrafo = input.nextElementSibling;
-    if (input.value === "") {
-      input.style.border = "2px solid red";
-      paragrafo.style.color = "red"
-      paragrafo.classList.remove("esconder");
-    } else {
-      input.style.border = "2px solid green";
-      paragrafo.classList.add("esconder");
-    }
-  });
-});
-
-function verificarInput(input) {
-  if (input.value === "") {
-    input.style.border = "2px solid red";
-  } else {
-    input.style.border = "2px solid green";
-  }
-}
